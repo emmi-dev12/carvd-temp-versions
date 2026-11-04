@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carvd. | Branded boards meant to be ridden</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0a0a0a; color: #fff; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; position: fixed; width: 100%; background: rgba(10,10,10,0.9); z-index: 100; }
+    .logo { font-size: 1.8em; font-weight: 700; }
+    nav a { color: #ccc; margin-left: 24px; text-decoration: none; }
+    nav a:hover { color: #FF4D00; }
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 100px 40px 60px; background: radial-gradient(ellipse at 70% 50%, rgba(255,77,0,0.15) 0%, transparent 60%), #0a0a0a; }
+    .hero-content { max-width: 50%; }
+    h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; margin-bottom: 20px; }
+    .sub { font-size: 1.1rem; color: #aaa; margin-bottom: 32px; max-width: 480px; }
+    .cta { display: inline-block; background: #FF4D00; color: #000; padding: 14px 28px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-right: 12px; }
+    .cta-secondary { display: inline-block; border: 1px solid #555; color: #fff; padding: 14px 28px; border-radius: 50px; text-decoration: none; }
+    .board-visual { flex: 1; display: flex; justify-content: center; align-items: center; }
+    .board { width: 220px; height: 620px; background: linear-gradient(180deg, #1a1a1a 0%, #000 100%); border-radius: 40px 40px 60px 60px; border: 2px solid #FF4D00; position: relative; box-shadow: 0 0 60px rgba(255,77,0,0.3); }
+    .board::after { content: 'carvd.'; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); color: #FF4D00; font-weight: 700; letter-spacing: 2px; }
+    section { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
+    h2 { font-size: 2.2rem; margin-bottom: 16px; }
+    .b2b { background: #111; border-top: 1px solid #222; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-top: 40px; }
+    .card { background: #1a1a1a; padding: 24px; border-radius: 12px; border: 1px solid #333; }
+    .card h3 { color: #FF4D00; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">carvd.</div>
+    <nav>
+      <a href="#boards">boards</a>
+      <a href="#construction">construction</a>
+      <a href="#partners">for brands</a>
+      <a href="#start">start a board</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>branded boards<br>meant to be ridden</h1>
+      <p class="sub">high-end custom designed snowboards. shape, graphic, and feel — set with you. designed in switzerland.</p>
+      <a href="#start" class="cta">start a board</a>
+      <a href="#boards" class="cta-secondary">see the boards</a>
+    </div>
+    <div class="board-visual">
+      <div class="board"></div>
+    </div>
+  </div>
+  <section id="boards">
+    <h2>snowboards. built around your ride.</h2>
+    <p style="color:#aaa; max-width:600px;">a catalogue board is an average. yours is not. custom shape, flex, and graphics that perform on snow.</p>
+  </section>
+  <section id="partners" class="b2b">
+    <h2>for brands & partnerships</h2>
+    <p style="color:#aaa; max-width:600px; margin-bottom:20px;">hotels, ski slopes, investment firms, teams — boards that carry your brand and get ridden, not displayed.</p>
+    <div class="grid">
+      <div class="card"><h3>resort & hotel</h3><p>guest experiences, ski-in amenities, branded activations that live on the mountain.</p></div>
+      <div class="card"><h3>corporate & teams</h3><p>client trips, team boards, limited editions that reinforce culture through performance.</p></div>
+      <div class="card"><h3>custom lines</h3><p>short runs or full collections under your identity. we handle design, construction, and delivery.</p></div>
+    </div>
+  </section>
+  <section id="construction">
+    <h2>construction that holds</h2>
+    <p style="color:#aaa;">sintered bases, engineered cores, ceramic edges, zero-VOC epoxy, full cure and cold press. built in switzerland.</p>
+  </section>
+  <section id="start" style="text-align:center; padding-bottom:100px;">
+    <h2>start a board</h2>
+    <a href="mailto:custom@carvdboards.com" class="cta">get in touch</a>
+  </section>
+</body>
+</html>
